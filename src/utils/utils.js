@@ -5,7 +5,6 @@ import {
   } from '@datastructures-js/heap';
 
 export const findBestAnswer = (data,sizeOfWindow,sizeOfWholeArray,determineCallBack) => {
-    console.log('====>>>',sizeOfWholeArray,sizeOfWindow)
     const max = new MaxHeap((element) => element.y)
     const min = new MinHeap((element) => element.y)
     let arrayStartEnd = {start:0,end:sizeOfWindow-1}

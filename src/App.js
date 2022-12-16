@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import CanvasJSReact from './canvasjs-stock-1.7.2/canvasjs.stock.react';
 import { data } from './ChartData';
@@ -38,7 +37,6 @@ const options = {
     buttons: []
   }
 }
-const data1 = [13,18,31,45,67]
 
 function App() {
   const [boundary,setBoundary]=useState(365)
@@ -71,7 +69,6 @@ const submitHandler = (event) => {
 const boundaryInputHandler = (event) => {
    setBoundaryInput(event?.target?.value)
 }
-console.log('options =>>>',options)
   return (
     <div className="App" style={{position:'relative'}}>
       {showModal && 
@@ -89,9 +86,9 @@ console.log('options =>>>',options)
       }
       <div> 
         <div >
-          <form onSubmit={submitHandler} style={{height:'20vh', display:'flex' ,flexDirection:'column' , justifyContent:'center' ,alignItems:'center' , dir:'rtl'}}>
-          <input style={{width:'200px', border:'1px solid #efefef',padding:'8px' ,height:'30px',borderRadius:'4px'}} placeholder='بازه ی زمانی (ثانیه)' dir='rtl' onChange={boundaryInputHandler} value={boundaryInput}/>
-          <button type='submit' style={{marginTop:'16px',cursor:'pointer',width:'200px',height:'40px', borderRadius:'4px',border:'1px solid #efefef' , backgroundColor:'rgb(239 236 236)' ,fontSize:'14px',fontWeight:'600'}}>بررسی</button>
+          <form onSubmit={submitHandler} style={{height:'18vh', display:'flex' ,flexDirection:'column' , justifyContent:'center' ,alignItems:'center' , dir:'rtl'}}>
+          <input style={{width:'200px', border:'1px solid #efefef',padding:'8px' ,height:'25px',borderRadius:'4px'}} placeholder='بازه ی زمانی (ثانیه)' dir='rtl' onChange={boundaryInputHandler} value={boundaryInput}/>
+          <button type='submit' style={{marginTop:'16px',cursor:'pointer',width:'200px',height:'30px', borderRadius:'4px',border:'1px solid #efefef' , backgroundColor:'rgb(239 236 236)' ,fontSize:'14px',fontWeight:'600'}}>بررسی</button>
           </form>
         </div>
         <div>
@@ -100,6 +97,15 @@ console.log('options =>>>',options)
         <div>
           <p style={{color:'red',fontSize:'12px',fontWeight:'bold'}}> قسمت پایین نمودار بازه ی پیشنهادی را نشان می دهد که به صورت دستی نیز قابل تغییر است و امکان دیدن کل بازه ی یک ساله وجود دارد</p>
         </div>
+      {boundaryInput &&  <div style={{display:'flex',flexDirection:'row-reverse' ,alignItems:'center',justifyContent:'center'}}>
+        <p className='withMargin'>برای بازه انتخابی شما</p>
+        <p className='withMargin'>بهترین انتخاب</p>
+        <p className='withMargin'>از</p>
+        <p className='withMargin'>{end}</p>
+        <p className='withMargin'>تا</p>
+        <p className='withMargin'>{start}</p>
+        </div>
+}
         <div>
          <CanvasJSStockChart containerProps={containerProps} options = {{...options}}
           />
