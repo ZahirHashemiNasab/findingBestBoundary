@@ -2,7 +2,7 @@
   "name": "mofid-challenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ZahirHashemiNasab.github.io/mofidTraining",
+  "homepage": "https://ZahirHashemiNasab.github.io/findingBestBoundary",
   "dependencies": {
     "@datastructures-js/heap": "^4.1.2",
     "@testing-library/jest-dom": "^5.16.5",
