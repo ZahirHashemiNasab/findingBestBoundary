@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mofidTraining/static/css/main.d41d748f.css",
-    "main.js": "/mofidTraining/static/js/main.de85620b.js",
-    "static/js/787.94cd7318.chunk.js": "/mofidTraining/static/js/787.94cd7318.chunk.js",
-    "index.html": "/mofidTraining/index.html",
-    "main.d41d748f.css.map": "/mofidTraining/static/css/main.d41d748f.css.map",
-    "main.de85620b.js.map": "/mofidTraining/static/js/main.de85620b.js.map",
-    "787.94cd7318.chunk.js.map": "/mofidTraining/static/js/787.94cd7318.chunk.js.map"
+    "main.css": "/findingBestBoundary/static/css/main.d41d748f.css",
+    "main.js": "/findingBestBoundary/static/js/main.0573da35.js",
+    "static/js/787.94cd7318.chunk.js": "/findingBestBoundary/static/js/787.94cd7318.chunk.js",
+    "index.html": "/findingBestBoundary/index.html",
+    "main.d41d748f.css.map": "/findingBestBoundary/static/css/main.d41d748f.css.map",
+    "main.0573da35.js.map": "/findingBestBoundary/static/js/main.0573da35.js.map",
+    "787.94cd7318.chunk.js.map": "/findingBestBoundary/static/js/787.94cd7318.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d41d748f.css",
-    "static/js/main.de85620b.js"
+    "static/js/main.0573da35.js"
   ]
 }
