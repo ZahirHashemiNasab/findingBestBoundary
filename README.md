@@ -27,7 +27,7 @@ algorith : <br />
 9- find max of diffArray and it will be the best period <br />
 <br />
 <br />
-time complexity of mean and max heap definition is O(logk) <br />
+time complexity of min and max heap definition is O(logk) <br />
 time complexity of add to heap is O(logk) <br />
 we have n times of adding  <br />
 finding the max in diffArray is O(n) <br />
