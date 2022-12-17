@@ -31,5 +31,5 @@ time complexity of min and max heap definition is O(logk) <br />
 time complexity of add to heap is O(logk) <br />
 we have n times of adding  <br />
 finding the max in diffArray is O(n) <br />
-then the time complexity of our algorith will be O(nlogK+n) which is better than O(nk) (hamuni ke tu mosahebe pishnahad kardam)
+then the time complexity of our algorith will be O(nlogK+n) which is better than O(nk)
 
